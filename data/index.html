@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="\jquery.min.js"></script>
+    <script src="\scripts.js"></script>
+    <link href="\style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <!-- https://iconify.design/icon-sets/mdi/ -->
+</head>
+
+<body>
+
+<div class="header">
+    <div class="title">Farmatron v5</div> 
+</div>
+ 
+<div class="papa">
+<div class="main-grid">
+
+<div class="maincontainer right">
+    <div class="main">
+        <div class="card">
+            <div class="sensor">
+            <span class="iconify black icon" data-icon="mdi:thermometer-lines" data-inline="false"></span> <br><span class="number" id="temperature">n/a</span> c<br>
+            </div>
+            <div class="sensor">
+            <span class="iconify black icon" data-icon="mdi-water-percent" data-inline="false"></span> <br><span class="number" id="humidity">n/a</span> %<br>
+            </div>
+            <div class="sensor">
+            <span class="iconify black icon" data-icon="mdi:white-balance-sunny" data-inline="false"></span> <br><span class="number" id="daylight">n/a</span><br>
+            </div>
+        </div>
+    </div> 
+
+</div>
+
+
+<div class="maincontainer left">
+<div class="main">
+        <div class="card">
+            <div class="sensor">
+            <span class="iconify black icon" data-icon="mdi:timer" data-inline="false"></span> 
+            <br>
+            <input  class="inputNumber" type="number" id="active" ></input>
+            <input  class="uploadButton" type="button" id="setButton" value="set" onclick="setActive()"></input>
+            <br>
+            <p>On for <span  id="activeG">n/a</span> ms</span>
+            </div>
+            <div class="sensor">
+            <span class="iconify black icon" data-icon="mdi:timer-off" data-inline="false"></span> 
+            <br>
+            <input  class="inputNumber" type="number" id="passive" ></input>
+            <input  class="uploadButton" type="button" id="setButton" value="set" onclick="setPassive()"></input>
+            <br>
+            <p>Off for <span id="passiveG">n/a</span> ms</span>
+            </div>
+            <div class="sensor">
+            <span class="iconify black icon" data-icon="mdi:cloud-upload" data-inline="false"></span> 
+            <br>
+            <input  class="checkb" type="checkbox" id="Check1" onclick="setUpload()"></input>
+            <br>
+            <p>Upload Data = <span id="upload"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="maincontainer right">
+    <div class="main">
+        <div class="card">
+            
+        </div>
+    </div> 
+
+</div>
+
+<div class="maincontainer left">
+<div class="main">
+    <div class="card">
+        <div class="iconButtons">
+            <div class="sensor">
+                <span id="water" class="iconify blue2 icon2" data-icon="mdi:water" data-inline="false"></span>               
+            </div>
+            <div class="sensor">
+                <a id="fan" class="iconify blue2 icon2" data-icon="mdi:fan-off" onclick="setFan() data-inline="false"></a> 
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+<!--
+<progress value="0" max="10" id="progressBar"></progress>
+-->
+<div class="title">
+    <div class="thinglink">
+        <a target="_blank" href="https://thingspeak.com/channels/1024584">Thingspeak</a>
+    </div>
+</div>
+
+<div class="thingspeak">
+    <div class="grid-container">
+
+    <iframe   src="https://thingspeak.com/channels/1024584/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humidity&type=line"></iframe>
+
+    <iframe  src="https://thingspeak.com/channels/1024584/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature&type=line"></iframe>
+
+
+    <iframe  src="https://thingspeak.com/channels/1024584/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Daylight&type=line"></iframe>
+
+    <iframe  src="https://thingspeak.com/channels/1024584/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=On%20Time&type=line&update=15"></iframe>
+
+    <iframe  src="https://thingspeak.com/channels/1024584/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&&title=Off%20Time&type=line&update=15"></iframe>
+
+    <iframe  src="https://thingspeak.com/channels/1024584/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Fan&type=line"></iframe>
+
+
+    </div>
+</div>
+
+</body>
+</html>

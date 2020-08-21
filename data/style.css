@@ -1,0 +1,136 @@
+
+.iconify.icon { 
+    font-size: 74px;
+}
+.iconify.icon2 { 
+    font-size: 120px;
+}
+
+.iconify.orange { color: #d35400; }
+.iconify.blue { color: #2980b9; }
+.iconify.yellow { color: #f1c40f; }
+.iconify.blue2 { color: #3498db; }
+.iconify.red { color: #e74c3c; }
+.iconify.gray { color: #ecf0f1; }
+.iconify.green { color: #1abc9c; }
+.iconify.white { color: #fff; }
+.iconify.black { color: #000; }
+
+
+.iconButtons{
+    display: contents;
+}
+
+div{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    position: absolute;
+}
+
+iframe {
+border:none;
+    width: 100%;
+    height: 300px;
+}
+svg{
+    margin-bottom:30px;
+}
+
+text.tspan {
+    display:none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ". . ." ". . ." ". . .";
+}
+
+.main-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas: ". . " ". . " ". . ";
+}
+
+.left {
+    text-align:left;
+}
+.right {
+    text-align:right;
+}
+
+.papa {
+    text-align:center;
+}
+
+.header{
+    text-align: center;
+}
+.uploadButton {
+    width:50px;
+}
+.inputNumber{
+    width:100px;
+    text-align:center;
+}
+.sensor{
+	display:block;
+    margin: auto;
+}
+.number {
+    font-size:48px;
+}
+
+.card{
+  min-width: 600px;
+  min-height: 250px;
+  background: #ecf0f1;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  color: #e67e22;
+  margin: 40px;
+  box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+  display: -webkit-box;
+}
+.main{
+  /*max-width: 400px;*/
+  text-align: center;
+  display: -webkit-inline-box;
+}
+.maincontainer{
+  /*display: inline-flex;*/
+}
+.title{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 600;
+  background-color: #ccc;
+  color:#fff;
+  padding: 20px 0px;
+}
+
+.thinglink{
+    margin: 5px 0px;
+}
+.thinglink a{
+    text-decoration:none;
+    color:#fff;
+}
+
+.settings{
+  min-width:20px;
+  right:0px;
+}
+
+.checkb{
+	background:#fff;
+}
+
+.thingspeak{
+	margin: 50px 10px 20px 10px;
+}
